@@ -1,0 +1,33 @@
+GABRIEL LUPO
+R.A:010623067 
+
+Tabela de Produtos (periféricos)
+•	id_produto (PK): Chave primária, identificador único do produto.
+•	nome: Nome do produto (ex: Mouse Gamer, Teclado Mecânico).
+•	descricao: Descrição detalhada do produto.
+•	marca: Marca do produto.
+•	modelo: Modelo do produto.
+•	preco: Preço do produto.
+•	quantidade_estoque: Quantidade em estoque.
+•	categoria: Categoria do produto (ex: Mouse, Teclado, Headset).
+
+Tabela de Clientes
+•	id_cliente (PK): Chave primária, identificador único do cliente.
+•	nome: Nome completo do cliente.
+•	email: Endereço de email do cliente.
+•	telefone: Número de telefone do cliente.   
+•	endereco: Endereço completo do cliente.
+
+Tabela de Pedidos
+•	id_pedido (PK): Chave primária, identificador único do pedido.
+•	id_cliente(FK): Chave estrangeira referenciando a tabela de clientes.
+•	data_pedido: Data do pedido.
+•	status: Status do pedido (ex: Aguardando pagamento, Em processamento, Entregue).
+
+Tabela de Itens do Pedido
+•	id_item_pedido(PK): Chave primária, identificador único do item do pedido.
+•	id_pedido(FK): Chave estrangeira referenciando a tabela de pedidos.
+•	id_produto (FK): Chave estrangeira referenciando a tabela de produtos.
+•	quantidade: Quantidade do produto no pedido.
+•	preco_unitario: Preço unitário do produto no momento da compra.
+
